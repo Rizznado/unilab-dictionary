@@ -1,51 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- facebook metas -->
-    <!-- <meta property="og:url" content="" /> -->
-    <!-- <meta property="og:image" content="" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="უნილაბის ლექსიკონი" />
-    <meta
-      property="og:description"
-      content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!"
-    />
-    <!-- facebook metas -->
-    <meta
-      name="description"
-      content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <title>უნილაბის ლექსიკონი</title>
-  </head>
+{% extends "layouts/base.html" %}
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="flex-between">
-          <div class="site-logo">
-            <a href="../index.html">
-              <img src="../media/svg/site-logo/logo.svg" alt="site logo" />
-            </a>
-          </div>
-          <nav class="nav">
-            <ul class="nav-ul">
-              <li class="nav-li">
-                <a class="nav-link" href="./about.html">პროექტის შესახებ</a>
-              </li>
-              <li class="nav-li">
-                <a class="nav-link" href="./dictionary.html">ლექსიკონი</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+{% block body %}
+
     <main class="container">
       <article class="term-detailed">
         <h2 id="term">WATERFALL MODEL - ჩანჩქერის მოდელი</h2>
@@ -70,7 +26,7 @@
             </p>
           </div>
           <div class="example-img-wrapper">
-            <img class="example-img" src="../media/png/unknown.png" />
+            <img class="example-img" src="../uploads/png/unknown.png" />
           </div>
         </div>
         <div class="hashtag-wrapper">
@@ -97,20 +53,7 @@
         <a href="#">რეგისტრაცია სტაჟირებაზე</a>
       </div>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="center-element">
-          <div class="email-info">
-            <span>unilab@iliauni.edu.ge</span>
-          </div>
-          <p class="footer-info">
-            ვებგვერდი შეიქმნა ლექსიკოგრაფების დახმარებით
-          </p>
-        </div>
-      </div>
-    </footer>
 
-    <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/detailed.js"></script>
-  </body>
-</html>
+    <script type="module" src="static/js/main.js"></script>
+    <script type="module" src="static/js/detailed.js"></script>
+{% endblock %}

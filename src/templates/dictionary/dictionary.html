@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- facebook metas -->
-    <!-- <meta property="og:url" content="" /> -->
-    <!-- <meta property="og:image" content="" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="უნილაბის ლექსიკონი" />
-    <meta property="og:description" content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!" />
-    <!-- facebook metas -->
-    <meta name="description" content="შექმენი ქართული ტერმინი, შემოუერთდი ტერმინების კონკურსს!"/>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
-    <!-- <link rel="stylesheet" href="../css/font.css"> -->
-    <!-- <link rel="stylesheet" href="../css/utilities.css"> -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>უნილაბის ლექსიკონი</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="flex-between">
-                <div class="site-logo">
-                    <a href="../index.html">
-                        <img src="../media/svg/site-logo/logo.svg" alt="site logo">
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-ul">
-                        <li class="nav-li">
-                            <a class="nav-link" href="./about.html">პროექტის შესახებ</a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-link active" href="./dictionary.html">ლექსიკონი</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+{% extends "layouts/base.html" %}
+ {% block body %}
 
     <main class="container">
        
@@ -110,7 +66,7 @@
                                     <option value="python">ძველი დამატებული</option>
                                 </select>
                                 <div class="custom-arrow last">
-                                    <img src="../media/svg/generic/dropdown-arrow.svg" alt="dropdown-arrow">
+                                    <img src="../uploads/svg/generic/dropdown-arrow.svg" alt="dropdown-arrow">
                                 </div>
                             </div>
                         </div>
@@ -127,22 +83,8 @@
         </div>
         <div class="pagination"></div>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="center-element">
-                <div class="email-info">
-                    <span>unilab@iliauni.edu.ge</span>
-                </div>
-                <p class="footer-info">ვებგვერდი შეიქმნა ლექსიკოგრაფების დახმარებით</p>
-
-            </div>
-        </div>
-    </footer>
-
-
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <!-- <script type="module" src="../js/main.js"></script> -->
-    <script type="module" src="../js/dictionary.js"></script>
-</body>
+    <script type="module" src="static/js/dictionary.js"></script>
+{% endblock %}
 
-</html>
