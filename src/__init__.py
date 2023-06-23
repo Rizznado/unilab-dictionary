@@ -1,10 +1,10 @@
 from flask import Flask
 from src.extensions import db
 from src.config import Config
-from src.views import main_blueprint, dictionarydetailed_blueprint, dictionary_blueprint, error_blueprint, about_blueprint
+from src.views import main_blueprint
 from src.commands import init_db
 
-BLUEPRINTS = [main_blueprint, dictionarydetailed_blueprint, dictionary_blueprint, error_blueprint, about_blueprint ]
+BLUEPRINTS = [main_blueprint]
 COMMANDS = [init_db]
 
 def create_app():

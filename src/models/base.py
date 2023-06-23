@@ -18,3 +18,5 @@ class BaseModel():
         db.session.delete(self)
         self.save()
 
+
+
